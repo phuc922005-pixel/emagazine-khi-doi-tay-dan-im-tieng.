@@ -1,0 +1,91 @@
+/* ==========================================================================
+   CSS VARIABLES & DESIGN TOKENS
+   Contemporary Editorial × Documentary Photography × Vietnamese Craft Heritage
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Strict Editorial Heritage System */
+  --bg-primary: #F3EFE6;         /* Màu giấy ngà (Ivory Paper) */
+  --bg-secondary: #E5DED0;       /* Màu giấy tự nhiên / mộc (Natural Paper) */
+  --bg-dark: #211F1A;            /* Nâu đen lắng đọng (Dark Charcoal / Bistre) */
+  --bg-elevated: #FAF7F2;        /* Nền nổi vi tế */
+  
+  --text-primary: #25241F;       /* Đen than mờ (Charcoal Black) */
+  --text-secondary: #716B60;     /* Xám nâu trầm (Warm Taupe / Editorial Gray) */
+  --text-muted: #968F83;         /* Xám mộc nhạt (Subtle metadata) */
+  --text-light: #F3EFE6;         /* Màu giấy sáng trên nền tối */
+  --text-light-secondary: #B8B0A2;
+  
+  --accent-terracotta: #9F392C;  /* Đỏ đất nung làng nghề */
+  --accent-terracotta-hover: #BA4335;
+  --accent-terracotta-soft: rgba(159, 57, 44, 0.12);
+  --accent-ochre: #C28B38;       /* Vàng rơm / hoa hòe */
+  --accent-indigo: #2D4356;      /* Xanh chàm tự nhiên */
+
+  /* Hairlines and Borders */
+  --border-light: rgba(37, 36, 31, 0.12);
+  --border-medium: rgba(37, 36, 31, 0.22);
+  --border-dark: rgba(243, 239, 230, 0.14);
+  --border-accent: rgba(159, 57, 44, 0.35);
+
+  /* Typography Stacks */
+  --font-serif: 'Playfair Display', 'Noto Serif', Georgia, serif;
+  --font-quote: 'Noto Serif', Georgia, serif;
+  --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Typography Scales */
+  --text-xs: clamp(0.72rem, 0.7rem + 0.15vw, 0.8125rem);    /* 11-13px: Eyebrows, meta */
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.2vw, 0.9375rem); /* 13-15px: Captions, notes */
+  --text-base: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);  /* 17-19px: Body text */
+  --text-md: clamp(1.25rem, 1.15rem + 0.5vw, 1.45rem);     /* 20-23px: Subheadings */
+  --text-lg: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);        /* 24-32px: H3 */
+  --text-xl: clamp(2rem, 1.7rem + 1.5vw, 3rem);            /* 32-48px: Section H2 (mobile/tablet) */
+  --text-2xl: clamp(2.5rem, 2rem + 2.5vw, 4rem);           /* 40-64px: Section H2 (desktop) */
+  --text-hero: clamp(3rem, 2.2rem + 4.5vw, 6.25rem);       /* 48-100px: Monumental H1 */
+
+  /* Leading (Line Heights) */
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.7;         /* Yêu cầu line-height ~1.7 cho body text */
+  --leading-loose: 1.9;
+
+  /* Spacing Scale */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+  --space-section: clamp(80px, 8vw, 140px);
+  --section-gap: clamp(96px, 10vw, 160px);
+
+  /* Layout Containers */
+  --container-max: 1280px;
+  --container-editorial: 720px;  /* Editorial reading text column (620-720px) */
+  --container-wide: 1400px;
+  --margin-desktop: clamp(48px, 5vw, 88px);
+  --margin-tablet: 32px;
+  --margin-mobile: 20px;
+  --gutter: 24px;
+
+  /* Transitions & Easing */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 200ms var(--ease-soft);
+  --transition-normal: 400ms var(--ease-editorial);
+  --transition-slow: 700ms var(--ease-editorial);
+
+  /* Shadows (Subtle, paper-like only, no artificial glows) */
+  --shadow-paper: 0 4px 20px rgba(37, 36, 31, 0.05);
+  --shadow-lift: 0 12px 36px rgba(37, 36, 31, 0.08);
+
+  /* Z-Index Hierarchy */
+  --z-progress: 1000;
+  --z-header: 900;
+  --z-nav: 800;
+  --z-modal: 2000;
+  --z-tooltip: 1500;
+}
